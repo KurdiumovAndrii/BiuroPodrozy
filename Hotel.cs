@@ -5,14 +5,14 @@ namespace Project
     {
         public string kraj;
         public string nazwa;
-        public decimal cena;
-        public int kategoria;
+        public decimal cenaZaDobe;
+        public string kategoria;
         
-        public Hotel(string kraj, string nazwa,decimal cena,int kategoria)
+        public Hotel(string kraj, string nazwa,decimal cenaZaDobe,string kategoria)
         {
             this.kraj = kraj;
             this.nazwa = nazwa;
-            this.cena = cena;
+            this.cenaZaDobe = cenaZaDobe;
             this.kategoria = kategoria;
         }
     }
