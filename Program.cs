@@ -7,11 +7,13 @@ namespace Project
     {
         static void Main(string[] args)
         {
-            var dateStart = new DateTime(2022, 6, 15);
-            var dateEnd = new DateTime(2022, 6, 22);
-            var hotel = new Hotel("Meksyk", "Cancun Bay Resort", 450m, "****");
-            var oferta = new Oferta(1, hotel, dateStart, dateEnd, true);
-            Console.WriteLine(oferta.toString());
+            var generator = new GeneratorOfert();
+            var oferty = generator.getOferty();
+
+            for(int i = 0; i < oferty.Count;i++)
+            {
+                Console.WriteLine(oferty[i].toString());
+            }
         }
     }
 }

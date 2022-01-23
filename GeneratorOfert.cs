@@ -7,9 +7,10 @@ namespace Project
 
         public GeneratorOfert()
         {
+
         }
 
-        List<Hotel> getHotels()
+       public List<Hotel> getHotels()
         {
             List<Hotel> hotels = new List<Hotel>() {
                 new Hotel("Meksyk","Cancun Bay Resort", 450m, "****"),
@@ -30,6 +31,21 @@ namespace Project
             };
 
             return hotels;
+        }
+
+       public List<Oferta> getOferty()
+        {
+            var oferty = new List<Oferta>();
+
+
+            var dateStart = new DateTime(2022, 6, 15);
+            var dateEnd = new DateTime(2022, 6, 22);
+            var hotel = new Hotel("Meksyk", "Cancun Bay Resort", 450m, "****");
+            var oferta = new Oferta(1, hotel, dateStart, dateEnd, true);
+
+            oferty.Add(oferta);
+
+            return oferty;
         }
     }
 }
