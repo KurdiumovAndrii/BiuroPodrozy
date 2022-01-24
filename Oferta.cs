@@ -11,9 +11,8 @@ namespace Project
         public decimal cena;
         public int liczbaDni;
 
-        public Oferta(int numer, Hotel hotel, DateTime dataWylotu, DateTime dataPowrotu, bool allInclusive)
+        public Oferta( Hotel hotel, DateTime dataWylotu, DateTime dataPowrotu, bool allInclusive)
         {
-            this.numer = numer;
             this.dataWylotu = dataWylotu;
             this.dataPowrotu = dataPowrotu;
             this.allInclusive = allInclusive;
